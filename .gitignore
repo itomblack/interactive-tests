@@ -6,6 +6,8 @@ lib-cov
 *.out
 *.pid
 *.gz
+package.json
+gulpfile.js
 
 pids
 logs
