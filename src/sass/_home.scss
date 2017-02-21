@@ -17,10 +17,51 @@ ul {
 
 
 body {
-  background-color: $purple;
+  background-color: white;
+  text-align: center;
 }
 
 
 //===============================================================================
-// HOME STLYES
+// D3 Graph
 //===============================================================================
+text {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.line {
+  fill: none;
+  stroke-width: 1.5px;
+}
+
+.label {
+  text-anchor: middle;
+}
+
+.label rect {
+  fill: white;
+}
+
+.label-key {
+  font-weight: bold;
+}
+
+
+
+
+.xaxis {
+	width: 500px;
+	margin: 0 auto;
+	
+	span {
+		width: 24%;
+		display: inline-block;
+	}
+}
