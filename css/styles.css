@@ -274,38 +274,8 @@ body {
   background-color: white;
   text-align: center; }
 
-/* line 28, /Users/itomblack/Repos/interactive-tests/src/sass/_home.scss */
-text {
-  font: 10px sans-serif; }
-
-/* line 33, /Users/itomblack/Repos/interactive-tests/src/sass/_home.scss */
-.axis path, .axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges; }
-
-/* line 39, /Users/itomblack/Repos/interactive-tests/src/sass/_home.scss */
-.line {
-  fill: none;
-  stroke-width: 1.5px; }
-
-/* line 44, /Users/itomblack/Repos/interactive-tests/src/sass/_home.scss */
-.label {
-  text-anchor: middle; }
-
-/* line 48, /Users/itomblack/Repos/interactive-tests/src/sass/_home.scss */
-.label rect {
-  fill: white; }
-
-/* line 52, /Users/itomblack/Repos/interactive-tests/src/sass/_home.scss */
-.label-key {
-  font-weight: bold; }
-
-/* line 59, /Users/itomblack/Repos/interactive-tests/src/sass/_home.scss */
-.xaxis {
+/* line 30, /Users/itomblack/Repos/interactive-tests/src/sass/_home.scss */
+.graph-content {
   width: 500px;
-  margin: 0 auto; }
-  /* line 63, /Users/itomblack/Repos/interactive-tests/src/sass/_home.scss */
-  .xaxis span {
-    width: 24%;
-    display: inline-block; }
+  height: 500px;
+  display: block; }
