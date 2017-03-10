@@ -22,46 +22,57 @@ body {
 }
 
 
+
+//===============================================================================
+// Graph
+//===============================================================================
+
+.graph-content {
+  width: 500px;
+  height: 500px;
+  display: block;
+}
+
 //===============================================================================
 // D3 Graph
 //===============================================================================
-text {
-  font: 10px sans-serif;
-}
+// text {
+//   font: 10px sans-serif;
+// }
 
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
+// .axis path,
+// .axis line {
+//   fill: none;
+//   stroke: #000;
+//   shape-rendering: crispEdges;
+// }
 
-.line {
-  fill: none;
-  stroke-width: 1.5px;
-}
+// .line {
+//   fill: none;
+//   stroke-width: 1.5px;
+// }
 
-.label {
-  text-anchor: middle;
-}
+// .label {
+//   text-anchor: middle;
+// }
 
-.label rect {
-  fill: white;
-}
+// .label rect {
+//   fill: white;
+// }
 
-.label-key {
-  font-weight: bold;
-}
-
-
+// .label-key {
+//   font-weight: bold;
+// }
 
 
-.xaxis {
-	width: 500px;
-	margin: 0 auto;
+
+
+// .xaxis {
+// 	width: 500px;
+// 	margin: 0 auto;
 	
-	span {
-		width: 24%;
-		display: inline-block;
-	}
-}
+// 	span {
+// 		width: 24%;
+// 		display: inline-block;
+// 	}
+// }

@@ -3,23 +3,98 @@
 <head>
   @@include('./inc/head.html')
   <title></title> <!-- ADD A TITLE! -->
+
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+
 </head>
 <body>
+    
 
-  <h1>Dossier Foursight</h1>
 
-  <svg width="500" height="500"></svg>
-  <div class="xaxis">
-  	<span>Clarifier</span>
-  	<span>Ideator</span>
-  	<span>Developer</span>
-  	<span>Implementor</span>
-  </div>
+
+  <a-scene>
+        <a-assets>
+    
+          <img id="fall" src="/img/doss1.jpg">
+          <img id="goggles" src="/img/doss1.jpg">
+          <img id="mozvr" src="/img/doss2.jpg">
+          <img id="price" src="/img/doss3.jpg">
+          <img id="shadow2" src="/img/doss4.jpg">
+          <img id="potato" src="/img/doss4.jpg">
+        </a-assets>
+
+  >
+        
+        <!-- pink one -->
+        <!-- <a-curvedimage id="mozvr-logo" src="#mozvr" radius="5.7" theta-length="36" height="2"
+                       position="-3 2.6 0" opacity="0.5">
+          <a-animation attribute="rotation" from="0 10 0" to="0 200 0" delay="500"
+                       dur="1000"></a-animation>
+        </a-curvedimage> -->
+
+
+
+        <!-- naked grape -->
+      <!--   <a-image id="price" src="#price" width="70" height="35" scale="0.2 0.2 0.2">
+          <a-animation attribute="position" from="0 2.8 -6" to="2.25 2.8 -6" delay="1000"
+                       dur="1000"></a-animation>
+        </a-image> -->
+
+        <!-- naked grape -->
+        <a-curvedimage id="stereoscopic-fall-collection-text" src="#price" radius="5"
+                       theta-length="20" height="1" position="5.5 1.5 1" scale="5 5 1">
+          <a-animation attribute="rotation" from="0 180 0" to="0 180 0" delay="750"
+                       dur="1000"></a-animation>
+        </a-curvedimage>
+
+        <!-- potato -->
+      <!--   <a-image id="potato" src="#potato" width="70" height="35" scale="0.2 0.2 0.2">
+          <a-animation attribute="position" from="0 2.8 -6" to="20 2.8 -4" delay="1000"
+                       dur="1000"></a-animation>
+        </a-image> -->
+
+        <!-- potato -->
+        <a-curvedimage id="stereoscopic-fall-collection-text" src="#potato" radius="5"
+                       theta-length="20" height="2.5" position="17 1 0" scale="5 5 1">
+          <a-animation attribute="rotation" from="0 180 0" to="0 130 0" delay="750"
+                       dur="1000"></a-animation>
+        </a-curvedimage>
+
+
+
+        <!-- 2 bottles -->
+        <a-curvedimage id="stereoscopic-fall-collection-text" src="#fall" radius="5"
+                       theta-length="20" height="1" position="-1.5 1.5 0" scale="5 7 1">
+          <a-animation attribute="rotation" from="0 180 0" to="0 210 0" delay="750"
+                       dur="1000"></a-animation>
+        </a-curvedimage>
+
+
+
+        <!-- potatoes -->
+        <!-- <a-curvedimage id="shoes" src="#shoes" radius="5.7" theta-length="18" height=".8"
+                       position="0 1 0" scale=".4 1 .4">
+          <a-animation attribute="rotation" from="0 180 0" to="0 100 0" delay="750"
+                       dur="1000"></a-animation>
+        </a-curvedimage> -->
+
+
+
+
+
+
+        <a-sky color="#ECECEC"></a-sky>
+        <!-- <a-light type="directional" color="#fff" intensity="1" position="-1 2 1"></a-light> -->
+        <a-light type="ambient" color="#fff"></a-light>
+
+
+      </a-scene>
+
+
 
 
 
   <script src="js/vendor/jquery-2.1.1.min.js"></script>
-  <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
