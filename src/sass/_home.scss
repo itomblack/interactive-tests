@@ -17,8 +17,35 @@ ul {
 
 
 body {
-  background-color: white;
+  background-color: $lgrey;
   text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+.graph-section {
+  background-color: white;
+  padding: 40px 50px;
+  margin: 10vh 0;
+  height: 80vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  }
+
+
+.xaxis {
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+
+  span {
+    width: 24%;
+    display: inline-block;
+    font-weight: 500;
+  }
 }
 
 
@@ -32,8 +59,18 @@ text {
 .axis path,
 .axis line {
   fill: none;
-  stroke: #000;
+  stroke: none;
   shape-rendering: crispEdges;
+}
+
+.tick line {
+  stroke: $ink;
+  opacity: 0.2;
+}
+
+.tick text {
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .line {
@@ -55,13 +92,27 @@ text {
 
 
 
-
-.xaxis {
-	width: 500px;
-	margin: 0 auto;
-	
-	span {
-		width: 24%;
-		display: inline-block;
-	}
+.legend {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
 }
+
+.pointer { cursor: pointer; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

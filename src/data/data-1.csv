@@ -1,0 +1,17 @@
+name,score,type,set
+IB,38,clarifier,1
+IB,30,ideator,2
+IB,33,developer,3
+IB,37,implementor,4
+SH,32,clarifier,1
+SH,38,ideator,2
+SH,24,developer,3
+SH,42,implementor,4
+DC,36,clarifier,1
+DC,44,ideator,2
+DC,32,developer,3
+DC,32,implementor,4
+RC,29,clarifier,1
+RC,29,ideator,2
+RC,41,developer,3
+RC,19,implementor,4

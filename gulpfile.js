@@ -24,6 +24,8 @@ var path = {
         css: 'src/css/',
         destCss: 'dist/css/',
         img: 'src/img/**/*.*',
+        datafiles: 'src/data/*.csv',
+        destData: 'dist/data/',
         destImg: 'dist/img/',
         dest: 'dist/',
 };
@@ -45,7 +47,8 @@ gulp.task( 'server', function() {
 
 // jshint
 gulp.task( 'jshint', function() {
-  gulp.src( path.js )
+  //gulp.src( path.js )
+  gulp.src( 'src/js/*.js' )
     .pipe( jshint() )
     .pipe( jshint.reporter( stylish ) );
 });
@@ -56,7 +59,7 @@ gulp.task( 'jshint', function() {
 gulp.task( 'watch', function(done) {
   var lrServer = gulpLivereload();
 
-  gulp.watch( [path.destHtml, path.destJs, path.distCss + '/**/*.css' ] )
+ gulp.watch( [path.destHtml, path.destJs, path.sass ] )
     .on( 'change', function( file ) {
       lrServer.changed( file.path );
     });
@@ -88,6 +91,18 @@ gulp.task('js', function() {
 });
 
 
+
+
+
+gulp.task('data', function() {
+  gulp.src([path.datafiles])
+  .pipe(gulp.dest(path.destData));
+});
+
+
+
+
+
 gulp.task('clean', function(cb){
   rimraf('./dist', cb);
 });
@@ -106,5 +121,5 @@ gulp.task( 'sass', function() {
 
 // default task
 gulp.task( 'default', function(cb){
-  gulpSequence(['clean'], ['img'],  ['js', 'sass'], ['html'], ['server', 'watch'] )(cb);
+  gulpSequence(['clean'], ['img'],  ['js', 'sass'], ['data'], ['html'], ['server', 'watch'] )(cb);
 });
